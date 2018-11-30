@@ -161,9 +161,9 @@ if __name__ == '__main__':
   import argparse
 
   parser = argparse.ArgumentParser(description="Transform Market1501 Dataset")
-  parser.add_argument('--zip_file', type=str,
+  parser.add_argument('--zip-file', type=str,
                       default='~/Dataset/market1501/Market-1501-v15.09.15.zip')
-  parser.add_argument('--save_dir', type=str,
+  parser.add_argument('--save-dir', type=str,
                       default='~/Dataset/market1501')
   args = parser.parse_args()
   zip_file = osp.abspath(osp.expanduser(args.zip_file))
